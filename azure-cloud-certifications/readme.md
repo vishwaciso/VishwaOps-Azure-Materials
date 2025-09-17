@@ -7,19 +7,19 @@
 
 ## 📋 Certification Overview
 
-| Level | Certification | Badge | Key Focus |
-|-------|---------------|-------|-----------|
-| **Fundamentals** | Azure Fundamentals | ![AZ-900](https://img.shields.io/badge/AZ-900-blue) | Core Cloud Concepts, Azure Services, Pricing, SLA, Governance |
-| **Associate** | Azure Administrator | ![AZ-104](https://img.shields.io/badge/AZ-104-blue) | Manage Subscriptions, Storage, VMs, Networking, Identity |
-| **Associate** | Azure Developer | ![AZ-204](https://img.shields.io/badge/AZ-204-blue) | Develop Cloud Solutions, App Services, Functions, Storage, Security |
-| **Associate** | Azure Security Engineer | ![AZ-500](https://img.shields.io/badge/AZ-500-blue) | Identity & Access, Platform Protection, Security Operations |
-| **Associate** | Azure AI Engineer | ![AI-102](https://img.shields.io/badge/AI-102-blue) | AI/ML Solutions, Cognitive Services, Conversational AI |
-| **Associate** | Azure Data Engineer | ![DP-203](https://img.shields.io/badge/DP-203-blue) | Data Storage, ETL, Analytics, Databricks, SQL, Data Governance |
-| **Expert** | Azure Solutions Architect | ![AZ-305](https://img.shields.io/badge/AZ-305-blue) | Design Infrastructure, Compute, Storage, Security, Networking |
-| **Expert** | Azure DevOps Engineer | ![AZ-400](https://img.shields.io/badge/AZ-400-blue) | DevOps Strategy, CI/CD, Repos, Pipelines, Monitoring |
-| **Specialty** | Azure IoT Developer | ![AZ-220](https://img.shields.io/badge/AZ-220-blue) | IoT Hub, Device Management, Telemetry, Security |
-| **Specialty** | Azure Virtual Desktop | ![AZ-140](https://img.shields.io/badge/AZ-140-blue) | AVD Architecture, Security, Deployment, Monitoring |
-| **Specialty** | Azure Database Administrator | ![DP-300](https://img.shields.io/badge/DP-300-blue) | SQL, Database Security, Backup, Performance Optimization |
+| Level | Certification | Badge | Key Focus | Link |
+|-------|---------------|-------|-----------|------|
+| **Fundamentals** | [Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/exams/az-900) | ![AZ-900](https://img.shields.io/badge/AZ-900-blue) | Core Cloud Concepts, Azure Services, Pricing, SLA, Governance | [Official](https://learn.microsoft.com/en-us/certifications/exams/az-900) |
+| **Associate** | [Azure Administrator](https://learn.microsoft.com/en-us/certifications/exams/az-104) | ![AZ-104](https://img.shields.io/badge/AZ-104-blue) | Manage Subscriptions, Storage, VMs, Networking, Identity | [Official](https://learn.microsoft.com/en-us/certifications/exams/az-104) |
+| **Associate** | [Azure Developer](https://learn.microsoft.com/en-us/certifications/exams/az-204) | ![AZ-204](https://img.shields.io/badge/AZ-204-blue) | Develop Cloud Solutions, App Services, Functions, Storage, Security | [Official](https://learn.microsoft.com/en-us/certifications/exams/az-204) |
+| **Associate** | [Azure Security Engineer](https://learn.microsoft.com/en-us/certifications/exams/az-500) | ![AZ-500](https://img.shields.io/badge/AZ-500-blue) | Identity & Access, Platform Protection, Security Operations | [Official](https://learn.microsoft.com/en-us/certifications/exams/az-500) |
+| **Associate** | [Azure AI Engineer](https://learn.microsoft.com/en-us/certifications/exams/ai-102) | ![AI-102](https://img.shields.io/badge/AI-102-blue) | AI/ML Solutions, Cognitive Services, Conversational AI | [Official](https://learn.microsoft.com/en-us/certifications/exams/ai-102) |
+| **Associate** | [Azure Data Engineer](https://learn.microsoft.com/en-us/certifications/exams/dp-203) | ![DP-203](https://img.shields.io/badge/DP-203-blue) | Data Storage, ETL, Analytics, Databricks, SQL, Data Governance | [Official](https://learn.microsoft.com/en-us/certifications/exams/dp-203) |
+| **Expert** | [Azure Solutions Architect](https://learn.microsoft.com/en-us/certifications/exams/az-305) | ![AZ-305](https://img.shields.io/badge/AZ-305-blue) | Design Infrastructure, Compute, Storage, Security, Networking | [Official](https://learn.microsoft.com/en-us/certifications/exams/az-305) |
+| **Expert** | [Azure DevOps Engineer](https://learn.microsoft.com/en-us/certifications/exams/az-400) | ![AZ-400](https://img.shields.io/badge/AZ-400-blue) | DevOps Strategy, CI/CD, Repos, Pipelines, Monitoring | [Official](https://learn.microsoft.com/en-us/certifications/exams/az-400) |
+| **Specialty** | [Azure IoT Developer](https://learn.microsoft.com/en-us/certifications/exams/az-220) | ![AZ-220](https://img.shields.io/badge/AZ-220-blue) | IoT Hub, Device Management, Telemetry, Security | [Official](https://learn.microsoft.com/en-us/certifications/exams/az-220) |
+| **Specialty** | [Azure Virtual Desktop](https://learn.microsoft.com/en-us/certifications/exams/az-140) | ![AZ-140](https://img.shields.io/badge/AZ-140-blue) | AVD Architecture, Security, Deployment, Monitoring | [Official](https://learn.microsoft.com/en-us/certifications/exams/az-140) |
+| **Specialty** | [Azure Database Administrator](https://learn.microsoft.com/en-us/certifications/exams/dp-300) | ![DP-300](https://img.shields.io/badge/DP-300-blue) | SQL, Database Security, Backup, Performance Optimization | [Official](https://learn.microsoft.com/en-us/certifications/exams/dp-300) |
 
 ---
 
