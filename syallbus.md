@@ -1,140 +1,72 @@
-# 🚀 Azure Training Program – Final Curriculum  
+# 🌐 Azure Corporate Training Program – Curriculum  
 
-🗓 **Training Start Date:** TBA  
-⏰ **Training Slot:** 12:30 PM – 1:30 PM / 11:30 AM – 12:30 PM  
-
----
-
-## 📌 Training Roadmap  
-
-### 1. 🌍 Subscriptions & Resource Groups  
-- Understand **scopes, governance, billing**.  
+![Azure](https://img.shields.io/badge/Azure-Microsoft-blue?style=for-the-badge) 
+![Cloud](https://img.shields.io/badge/Cloud-Professional-orange?style=for-the-badge) 
+![DevOps](https://img.shields.io/badge/DevOps-CI/CD-green?style=for-the-badge) 
+![AI/ML](https://img.shields.io/badge/AI%2FML-Advanced-purple?style=for-the-badge)  
 
 ---
 
-### 2. 🔑 Entra ID (Azure AD)  
-- Identity & Access Management.  
-- **Users, Roles, RBAC**.  
+## 🗓 Training Details
+| Detail | Information |
+|--------|------------|
+| **Start Date** | TBA |
+| **Time Slot** | 12:30 PM – 1:30 PM / 11:30 AM – 12:30 PM |
+| **Mode** | Live Corporate Session |
+| **Trainer** | [Your Trainer’s Name] – Azure, DevOps, Big Data Expert |
 
 ---
 
-### 3. 🌐 Networking (VNets, Subnets, NSGs, Peering)  
-- Core of Azure architecture.  
-- Build **secure connectivity**.  
+## 🎯 Objective
+Equip participants with **hands-on enterprise-grade Azure skills**, including:  
+
+- IaaS, PaaS, Serverless  
+- Identity & Security Management  
+- DevOps & CI/CD Automation  
+- Big Data & AI/ML Analytics  
+- Infrastructure & Application Monitoring  
 
 ---
 
-### 4. 💻 Virtual Machines (VMs)  
-- Compute basics.  
-- Scaling, snapshots, backups.  
+## 📋 Curriculum Overview
+
+| No | Module | Focus Areas |
+|----|--------|------------|
+| 1 | 🌍 **Subscriptions & Resource Groups** | Scopes, Governance, Billing |
+| 2 | 🔑 **Entra ID (Azure AD)** | Identity Management, Users, Roles, RBAC |
+| 3 | 🌐 **Networking (VNets, Subnets, NSGs, Peering)** | Core Azure Architecture, Secure Connectivity |
+| 4 | 💻 **Virtual Machines (VMs)** | Compute Basics, Scaling, Snapshots, Backups |
+| 5 | 📸 **Azure Snapshots** | VM State Capture & Restore |
+| 6 | 🗄 **Storage Accounts** | Blob, File, Queue, Table, Redundancy Options |
+| 7 | 🛡 **Key Vault** | Secrets, Keys, Certificates Management |
+| 8 | ⚖️ **Azure Load Balancers (L4)** | Internal/External Traffic Distribution |
+| 9 | 🌐 **Application Gateway (L7 + WAF)** | Web Traffic Routing & Security |
+| 10 | 📊 **Monitoring Tools** | Azure Monitor, Log Analytics, Application Insights |
+| 11 | 🌐 **App Services** | Fully Managed PaaS Web Hosting |
+| 12 | ⚡ **Function Apps** | Serverless Compute |
+| 13 | 📩 **Service Bus** | Enterprise Messaging (Queues, Topics) |
+| 14 | 📡 **Event Hubs** | Big Data Streaming, Kafka-Compatible |
+| 15 | 🔗 **API Management (APIM)** | API Gateway, Policies, Rate Limiting |
+| 16 | 🗄 **Azure SQL Database** | Managed Relational DB |
+| 17 | 🔥 **Azure Databricks** | Big Data, AI/ML, Advanced Analytics |
+| 18 | 🔧 **Azure DevOps** | Repos, Boards, Artifacts |
+| 19 | 🚀 **Azure DevOps Pipelines** | CI/CD Automation |
+| 20 | 🐳 **Azure Kubernetes Service (AKS)** | Container Orchestration |
+| 21 | 💻 **Azure Virtual Desktop (AVD)** | Virtual Desktop Infrastructure |
+| 22 | 📈 **Managed Prometheus + Grafana** | Deep Monitoring for Infra & Apps |
 
 ---
 
-### 5. 📸 Azure Snapshots  
-- Capture and restore VM states.  
+## 🌟 Key Outcomes
+- ✅ **Hands-on mastery** of Azure services  
+- ✅ Build enterprise-ready **DevOps pipelines & containerized apps**  
+- ✅ Understand **Identity, Security & Compliance** best practices  
+- ✅ Leverage **Big Data & AI/ML** capabilities  
+- ✅ Implement **Monitoring & Observability** strategies  
 
 ---
 
-### 6. 🗄 Storage Accounts  
-- **Blob, File, Queue, Table** storage.  
-- Redundancy & replication.  
-
----
-
-### 7. 🛡 Key Vault  
-- Secure **secrets, keys, certificates**.  
-
----
-
-### 8. ⚖️ Azure Load Balancers (Layer 4)  
-- Internal & external traffic distribution.  
-
----
-
-### 9. 🌐 Application Gateway (Layer 7 + WAF)  
-- Web traffic routing.  
-- Protect workloads with **WAF**.  
-
----
-
-### 10. 📊 Monitoring Tools  
-- **Azure Monitor**  
-- **Log Analytics**  
-- **Application Insights**  
-
----
-
-### 11. 🌐 App Services  
-- Fully managed **PaaS web hosting**.  
-
----
-
-### 12. ⚡ Function Apps (Serverless)  
-- Event-driven compute model.  
-
----
-
-### 13. 📩 Service Bus  
-- Enterprise messaging (**queues, topics**).  
-
----
-
-### 14. 📡 Event Hubs  
-- **Big data streaming**.  
-- Kafka-compatible ingestion.  
-
----
-
-### 15. 🔗 API Management (APIM)  
-- API Gateway.  
-- **Policies, rate limiting, security**.  
-
----
-
-### 16. 🗄 Azure SQL Database  
-- Fully managed **relational database**.  
-
----
-
-### 17. 🔥 Azure Databricks  
-- **Big data, AI/ML, advanced analytics**.  
-
----
-
-### 18. 🔧 Azure DevOps (Repos, Boards, Artifacts)  
-- Full **DevOps suite**.  
-
----
-
-### 19. 🚀 Azure DevOps Pipelines  
-- **CI/CD automation**.  
-
----
-
-### 20. 🐳 Azure Kubernetes Service (AKS)  
-- Container orchestration.  
-- Hands-on after **Networking + DevOps**.  
-
----
-
-### 21. 💻 Azure Virtual Desktop (AVD)  
-- Deliver secure **virtual desktops**.  
-
----
-
-### 22. 📈 Azure Managed Prometheus + Grafana  
-- Deep infra & application **monitoring**.  
-
----
-
-## 🎯 Training Outcome  
-✅ Hands-on Azure cloud skills  
-✅ Real-world enterprise scenarios  
-✅ Coverage of **IaaS, PaaS, Serverless, DevOps, Data & AI, Security**  
-
----
-
-## ✨ Visual Journey  
+## 📊 Training Flow Diagram
 
 ```mermaid
 graph TD
