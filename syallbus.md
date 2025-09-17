@@ -11,9 +11,9 @@
 | Detail | Info |
 |--------|------|
 | **Start Date** | TBA |
-| **Time Slot** | 12:30 PM – 1:30 PM / 11:30 AM – 12:30 PM |
+| **Time Slot** | 12:30 PM – 1:30 PM |
 | **Mode** | Live Corporate Session |
-| **Trainer** | [Your Trainer’s Name] – Azure & DevOps Expert |
+| **Trainer** | [ Vishwa] – Azure & DevOps Expert |
 
 ---
 
