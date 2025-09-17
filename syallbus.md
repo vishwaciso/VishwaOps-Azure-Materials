@@ -17,48 +17,54 @@
 
 ---
 
-## 🎯 Training Objective
-Equip participants with **hands-on, enterprise-grade Azure skills**:  
+## 🎯 Objective
+Equip participants with **hands-on, enterprise-grade Azure skills** including:  
 
-💡 **Scope:** IaaS, PaaS, Serverless, Security, DevOps, Big Data, AI/ML, Monitoring  
+💡 IaaS, PaaS, Serverless, Security, DevOps, Big Data, AI/ML, Monitoring  
 
 ---
 
-## 📋 Curriculum Overview
+## 📋 Curriculum – Visual Modules
 
-| Module | Badge | Key Focus |
-|--------|-------|-----------|
-| 🌍 Subscriptions & Resource Groups | ![RG](https://img.shields.io/badge/Module-1-blue) | Scopes, Governance, Billing |
-| 🔑 Entra ID (Azure AD) | ![ID](https://img.shields.io/badge/Module-2-blue) | Identity Management, Users, Roles, RBAC |
-| 🌐 Networking (VNets, Subnets, NSGs, Peering) | ![Net](https://img.shields.io/badge/Module-3-blue) | Azure Core Architecture, Connectivity |
-| 💻 Virtual Machines (VMs) | ![VM](https://img.shields.io/badge/Module-4-blue) | Compute, Scaling, Snapshots, Backups |
-| 📸 Azure Snapshots | ![Snap](https://img.shields.io/badge/Module-5-blue) | VM State Capture & Restore |
-| 🗄 Storage Accounts | ![Storage](https://img.shields.io/badge/Module-6-blue) | Blob, File, Queue, Table, Redundancy |
-| 🛡 Key Vault | ![Vault](https://img.shields.io/badge/Module-7-blue) | Secrets, Keys, Certificates |
-| ⚖️ Azure Load Balancers (L4) | ![LB](https://img.shields.io/badge/Module-8-blue) | Traffic Distribution |
-| 🌐 Application Gateway (L7 + WAF) | ![AG](https://img.shields.io/badge/Module-9-blue) | Web Routing & Security |
-| 📊 Monitoring Tools | ![Monitor](https://img.shields.io/badge/Module-10-blue) | Azure Monitor, Log Analytics, App Insights |
-| 🌐 App Services | ![App](https://img.shields.io/badge/Module-11-blue) | PaaS Web Hosting |
-| ⚡ Function Apps | ![Func](https://img.shields.io/badge/Module-12-blue) | Serverless Compute |
-| 📩 Service Bus | ![SB](https://img.shields.io/badge/Module-13-blue) | Messaging Queues & Topics |
-| 📡 Event Hubs | ![EH](https://img.shields.io/badge/Module-14-blue) | Big Data Streaming, Kafka |
-| 🔗 API Management (APIM) | ![APIM](https://img.shields.io/badge/Module-15-blue) | API Gateway, Policies |
-| 🗄 Azure SQL Database | ![SQL](https://img.shields.io/badge/Module-16-blue) | Managed Relational DB |
-| 🔥 Azure Databricks | ![DB](https://img.shields.io/badge/Module-17-blue) | Big Data, AI/ML Analytics |
-| 🔧 Azure DevOps | ![ADO](https://img.shields.io/badge/Module-18-blue) | Repos, Boards, Artifacts |
-| 🚀 Azure DevOps Pipelines | ![Pipeline](https://img.shields.io/badge/Module-19-blue) | CI/CD Automation |
-| 🐳 Azure Kubernetes Service (AKS) | ![AKS](https://img.shields.io/badge/Module-20-blue) | Container Orchestration |
-| 💻 Azure Virtual Desktop (AVD) | ![AVD](https://img.shields.io/badge/Module-21-blue) | Virtual Desktop Infra |
-| 📈 Managed Prometheus + Grafana | ![Grafana](https://img.shields.io/badge/Module-22-blue) | Infra & App Monitoring |
+<div align="center">
+
+| Module | Key Focus |
+|--------|-----------|
+| <img src="https://img.shields.io/badge/1-Subscriptions%20&%20Resource%20Groups-blue?style=for-the-badge"/> | Scopes, Governance, Billing |
+| <img src="https://img.shields.io/badge/2-Entra%20ID%20(Azure%20AD)-blue?style=for-the-badge"/> | Identity Management, Users, Roles, RBAC |
+| <img src="https://img.shields.io/badge/3-Networking-blue?style=for-the-badge"/> | VNets, Subnets, NSGs, Peering, Connectivity |
+| <img src="https://img.shields.io/badge/4-Virtual%20Machines-blue?style=for-the-badge"/> | Compute, Scaling, Snapshots, Backups |
+| <img src="https://img.shields.io/badge/5-Azure%20Snapshots-blue?style=for-the-badge"/> | VM State Capture & Restore |
+| <img src="https://img.shields.io/badge/6-Storage%20Accounts-blue?style=for-the-badge"/> | Blob, File, Queue, Table, Redundancy |
+| <img src="https://img.shields.io/badge/7-Key%20Vault-blue?style=for-the-badge"/> | Secrets, Keys, Certificates |
+| <img src="https://img.shields.io/badge/8-Load%20Balancers%20(L4)-blue?style=for-the-badge"/> | Traffic Distribution |
+| <img src="https://img.shields.io/badge/9-Application%20Gateway%20(L7%20+%20WAF)-blue?style=for-the-badge"/> | Web Traffic Routing & Security |
+| <img src="https://img.shields.io/badge/10-Monitoring%20Tools-blue?style=for-the-badge"/> | Azure Monitor, Log Analytics, App Insights |
+| <img src="https://img.shields.io/badge/11-App%20Services-blue?style=for-the-badge"/> | PaaS Web Hosting |
+| <img src="https://img.shields.io/badge/12-Function%20Apps-blue?style=for-the-badge"/> | Serverless Compute |
+| <img src="https://img.shields.io/badge/13-Service%20Bus-blue?style=for-the-badge"/> | Messaging (Queues, Topics) |
+| <img src="https://img.shields.io/badge/14-Event%20Hubs-blue?style=for-the-badge"/> | Big Data Streaming, Kafka-Compatible |
+| <img src="https://img.shields.io/badge/15-API%20Management-blue?style=for-the-badge"/> | API Gateway, Policies, Rate Limiting |
+| <img src="https://img.shields.io/badge/16-Azure%20SQL%20Database-blue?style=for-the-badge"/> | Managed Relational DB |
+| <img src="https://img.shields.io/badge/17-Databricks-blue?style=for-the-badge"/> | Big Data, AI/ML, Advanced Analytics |
+| <img src="https://img.shields.io/badge/18-Azure%20DevOps-blue?style=for-the-badge"/> | Repos, Boards, Artifacts |
+| <img src="https://img.shields.io/badge/19-DevOps%20Pipelines-blue?style=for-the-badge"/> | CI/CD Automation |
+| <img src="https://img.shields.io/badge/20-AKS-blue?style=for-the-badge"/> | Container Orchestration |
+| <img src="https://img.shields.io/badge/21-AVD-blue?style=for-the-badge"/> | Virtual Desktop Infrastructure |
+| <img src="https://img.shields.io/badge/22-Prometheus%20+%20Grafana-blue?style=for-the-badge"/> | Deep Infra & App Monitoring |
+
+</div>
 
 ---
 
 ## 🌟 Key Outcomes
+<div align="center">
 - ✅ Hands-on mastery of Azure services  
-- ✅ Build enterprise-ready **DevOps pipelines & containerized apps**  
+- ✅ Enterprise-ready DevOps pipelines & containerized apps  
 - ✅ Identity, Security & Compliance best practices  
 - ✅ Big Data & AI/ML analytics  
-- ✅ Monitoring & Observability strategies  
+- ✅ Monitoring & Observability strategies
+</div>
 
 ---
 
