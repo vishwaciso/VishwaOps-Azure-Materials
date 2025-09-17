@@ -1,133 +1,143 @@
-covering Subscriptions, Resource Groups, Scopes, RBAC, Governance, Billing, with examples, scenarios, outcomes, and reasoning. I’ll also make it structured and ready for corporate training.
+# 📘 Azure Subscriptions & Resource Groups Training
 
-Here’s a draft for your README.md:
+**Authored by:** Vishwanath  
+**Version:** 1.0  
+**Target Audience:** Developers, DevOps Engineers, IT Admins, Corporate Teams  
 
-Azure Subscriptions & Resource Groups Training
+---
 
-Authored by Vishwanath
-
-Version: 1.0
-Target Audience: Developers, DevOps Engineers, IT Admins, Corporate Teams
-
-1. Objective
-
+## 1. 🎯 Objective
 This training module will teach you how to:
 
-Understand Azure hierarchy and scopes
+- Understand **Azure hierarchy and scopes**  
+- Work with **subscriptions and resource groups (RGs)**  
+- Apply **RBAC roles at different scopes**  
+- Implement **governance and policies**  
+- Track **billing and cost management**  
 
-Work with subscriptions and resource groups (RGs)
+---
 
-Apply RBAC roles at different scopes
-
-Implement governance and policies
-
-Track billing and cost management
-
-2. Why This Training is Important
-
+## 2. 🚀 Why This Training is Important
 Azure resources are vast and complex. Proper understanding of subscriptions and RGs is critical to:
 
-Organize resources logically for dev/test/prod environments
+- Organize resources logically for **Dev/Test/Prod environments**  
+- Apply **security controls with least privilege**  
+- Enforce **compliance and governance policies**  
+- Track costs and **optimize cloud spending**  
 
-Apply security controls with least privilege
+---
 
-Enforce compliance and governance policies
+## 3. 🗝️ Key Concepts
 
-Track costs and optimize cloud spending
+| Concept              | Description                        | Example                              | Why Needed |
+|----------------------|------------------------------------|--------------------------------------|------------|
+| **Tenant**           | Azure AD instance                  | `vishwaops.onmicrosoft.com`          | Central identity, manages all users & groups |
+| **Management Group** | Organizes subscriptions            | `Corp-Mgmt`                          | Apply governance policies to multiple subscriptions |
+| **Subscription**     | Billing + resource container       | `Dev-Subscription`, `Prod-Subscription` | Separate costs, quotas, and policies |
+| **Resource Group (RG)** | Logical container for resources | `Dev-RG1`, `Prod-RG1`                | Manage lifecycle, access, and cost per project |
+| **Resource**         | Actual Azure service               | VM, Storage Account, App Service     | The cloud asset you deploy |
+| **Scope**            | Where RBAC is applied              | Subscription, RG, Resource           | Control permissions efficiently |
+| **RBAC Roles**       | Assign permissions                 | Owner, Contributor, Reader           | Least privilege access management |
+| **Policies & Governance** | Rules enforcement             | Allowed VM sizes, Allowed Regions    | Ensure compliance and security |
+| **Billing & Cost Mgmt** | Track usage and cost            | Cost per RG, subscription            | Optimize cloud spending |
 
-3. Key Concepts
-Concept	Description	Example	Why Needed
-Tenant	Azure AD instance	vishwaops.onmicrosoft.com	Central identity, manages all users & groups
-Management Group	Organizes subscriptions	Corp-Mgmt	Apply governance policies to multiple subscriptions
-Subscription	Billing + resource container	Dev-Subscription, Prod-Subscription	Separate costs, quotas, and policies
-Resource Group (RG)	Logical container for resources	Dev-RG1, Prod-RG1	Manage lifecycle, access, and cost per project
-Resource	Actual Azure service	VM, Storage Account, App Service	The cloud asset you deploy
-Scope	Where RBAC is applied	Subscription, RG, Resource	Control permissions efficiently
-RBAC Roles	Assign permissions	Owner, Contributor, Reader	Least privilege access management
-Policies & Governance	Rules enforcement	Allowed VM sizes, Allowed Regions	Ensure compliance and security
-Billing & Cost Management	Track usage and cost	Cost per RG, subscription	Optimize cloud spending
-4. Azure Hierarchy Overview
+---
 
+## 4. 🔗 Azure Hierarchy Overview
 Azure resources are structured as follows:
+
+
 
 Tenant → Management Group → Subscription → Resource Group → Resource
 
 
-Example Scenario:
+**Example Scenario:**  
+- Tenant: `vishwaops.onmicrosoft.com`  
+- Management Group: `Corp-Mgmt → Dev / Prod`  
+- Subscription: `Dev-Subscription → RG: Dev-RG1`  
+- Resource: VM, Storage Account  
 
-Tenant: vishwaops.onmicrosoft.com
+**Outcome:** Logical separation, governance, cost tracking, and access control.
 
-Management Group: Corp-Mgmt → Dev / Prod subscriptions
+---
 
-Subscription: Dev-Subscription → RG: Dev-RG1
+## 5. 🛠️ Hands-On Steps
 
-Resource: VM, Storage Account
+### Step 1: Create a Resource Group
+- Azure Portal → **Resource Groups → + Create**  
+- Select Subscription → Enter Name (`Dev-RG1`) → Region → Review + Create  
 
-Outcome: Logical separation, governance, cost tracking, and access control.
+✅ **Outcome:** RG created successfully; ready for resources  
 
-5. Hands-On Steps
-Step 1: Create a Resource Group
+---
 
-Azure Portal → Resource Groups → + Create
+### Step 2: Assign RBAC Roles
+- Navigate to RG → **Access Control (IAM) → + Add → Role Assignment**  
+- Assign **Contributor** → Select user (`dev@company.com`) → Save  
 
-Select Subscription, enter Name (e.g., Dev-RG1) → Region → Review + Create
-Expected Outcome: RG created successfully; ready for resources
+**Scenario:** Dev team member can create/manage VMs only in `Dev-RG1`  
+✅ **Outcome:** Least privilege applied; cannot modify other RGs  
 
-Step 2: Assign RBAC Roles
+---
 
-Navigate to RG → Access Control (IAM) → + Add → Role Assignment
+### Step 3: Deploy Resource (VM)
+- RG → **+ Add → Virtual Machine → Fill details → Review + Create**  
 
-Assign Contributor → Select user (e.g., dev@company.com) → Save
-Scenario: Dev team member can create/manage VMs only in Dev-RG1
-Expected Outcome: Least privilege applied; cannot modify other RGs
+**Scenario:** Dev team deploys VM inside `Dev-RG1`  
+✅ **Outcome:** Resources contained within RG; RBAC enforced  
 
-Step 3: Deploy Resource (VM)
+---
 
-RG → + Add → Virtual Machine → Fill details → Review + Create
-Scenario: Dev team deploys VM inside Dev-RG1
-Expected Outcome: Resources contained within RG; RBAC enforced
+### Step 4: Apply Governance & Policies
+- Subscription → **Policies → Assign → Select policy (e.g., allowed VM sizes)**  
 
-Step 4: Apply Governance & Policies
+**Scenario:** Restrict VMs to `Standard_B2s`  
+✅ **Outcome:** Policy blocks non-compliant resources → ensures compliance  
 
-Subscription → Policies → Assign → Select policy (e.g., allowed VM sizes)
-Scenario: Restrict VMs to Standard_B2s
-Expected Outcome: Policy blocks non-compliant resources → ensures compliance
+---
 
-Step 5: Track Billing & Cost
+### Step 5: Track Billing & Cost
+- Subscription → **Cost Management + Billing → Cost Analysis → Filter by RG**  
 
-Subscription → Cost Management + Billing → Cost Analysis → Filter by RG
-Scenario: Compare costs for Dev-RG1 vs Prod-RG1
-Expected Outcome: Understand per-project cost; manage budgets efficiently
+**Scenario:** Compare costs for `Dev-RG1` vs `Prod-RG1`  
+✅ **Outcome:** Understand per-project cost; manage budgets efficiently  
 
-6. Real-World Scenarios
-Scenario	Steps	Outcome
-Dev team provisioning	Create RG → Assign Contributor → Deploy VM	Dev can deploy/manage VMs in RG only
-QA team read-only	Assign Reader role at subscription or RG	QA can view resources but not modify
-IT admin governance	Assign policy to limit VM size	Users comply with rules automatically
-Cost tracking	Tag resources per project	Cost visible per RG/project
-7. Expected Learning Outcomes
+---
 
-Create and manage RGs
+## 6. 🌍 Real-World Scenarios
 
-Assign RBAC roles at subscription and RG level
+| Scenario             | Steps                                      | Outcome |
+|----------------------|--------------------------------------------|---------|
+| Dev team provisioning | Create RG → Assign Contributor → Deploy VM | Dev can deploy/manage VMs in RG only |
+| QA team read-only     | Assign Reader role at subscription/RG      | QA can view resources but not modify |
+| IT admin governance   | Assign policy to limit VM size             | Users comply with rules automatically |
+| Cost tracking         | Tag resources per project                  | Cost visible per RG/project |
 
-Deploy and manage resources within RBAC scope
+---
 
-Apply policies for governance
+## 7. 🎓 Expected Learning Outcomes
+After this training, participants will be able to:
 
-Track and optimize billing and cost per RG/subscription
+- Create and manage **Resource Groups (RGs)**  
+- Assign **RBAC roles** at subscription and RG level  
+- Deploy and manage **resources** within RBAC scope  
+- Apply **policies for governance**  
+- Track and optimize **billing and cost** per RG/subscription  
 
-8. Why We Do This
+---
 
-Control & Organization: Resources grouped logically for lifecycle management
+## 8. 💡 Why We Do This
 
-Security: RBAC ensures least privilege access
+- **Control & Organization:** Resources grouped logically for lifecycle management  
+- **Security:** RBAC ensures least privilege access  
+- **Governance:** Policies enforce company compliance  
+- **Cost Management:** Track spending per project or subscription  
 
-Governance: Policies enforce company compliance
+---
 
-Cost Management: Track spending per project or subscription
+## 9. 📊 Example Diagram
 
-9. Example Diagram
+```mermaid
 flowchart TD
     A[Azure AD Tenant: vishwaops.onmicrosoft.com] 
     subgraph MG["Management Groups"]
