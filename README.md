@@ -1,1 +1,0 @@
-# VishwaOps-Azure-Materials
