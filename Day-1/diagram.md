@@ -16,8 +16,6 @@ Inside each subscription, you keep things organized in folders. Example: HR-Payr
 Resources = Files in Folder
 Actual services: VMs, Databases, Storage, Key Vaults, AKS clusters, etc.
 
-2. Azure Technical Terms (with visuals)
-Tree View (like AWS Org ASCII)
 Azure Tenant (HQ / Identity Boundary)
 │
 ├─ Management Groups (Gov/OU Level)
