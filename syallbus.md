@@ -18,9 +18,7 @@
 ---
 
 ## 🎯 Objective
-Equip participants with **hands-on, enterprise-grade Azure skills** including:  
-
-💡 IaaS, PaaS, Serverless, Security, DevOps, Big Data, AI/ML, Monitoring  
+Hands-on, enterprise-grade Azure skills for **IaaS, PaaS, Serverless, Security, DevOps, Big Data, AI/ML, and Monitoring**.
 
 ---
 
@@ -28,30 +26,135 @@ Equip participants with **hands-on, enterprise-grade Azure skills** including:
 
 <div align="center">
 
-| Module | Key Focus |
-|--------|-----------|
-| <img src="https://img.shields.io/badge/1-Subscriptions%20&%20Resource%20Groups-blue?style=for-the-badge"/> | Scopes, Governance, Billing |
-| <img src="https://img.shields.io/badge/2-Entra%20ID%20(Azure%20AD)-blue?style=for-the-badge"/> | Identity Management, Users, Roles, RBAC |
-| <img src="https://img.shields.io/badge/3-Networking-blue?style=for-the-badge"/> | VNets, Subnets, NSGs, Peering, Connectivity |
-| <img src="https://img.shields.io/badge/4-Virtual%20Machines-blue?style=for-the-badge"/> | Compute, Scaling, Snapshots, Backups |
-| <img src="https://img.shields.io/badge/5-Azure%20Snapshots-blue?style=for-the-badge"/> | VM State Capture & Restore |
-| <img src="https://img.shields.io/badge/6-Storage%20Accounts-blue?style=for-the-badge"/> | Blob, File, Queue, Table, Redundancy |
-| <img src="https://img.shields.io/badge/7-Key%20Vault-blue?style=for-the-badge"/> | Secrets, Keys, Certificates |
-| <img src="https://img.shields.io/badge/8-Load%20Balancers%20(L4)-blue?style=for-the-badge"/> | Traffic Distribution |
-| <img src="https://img.shields.io/badge/9-Application%20Gateway%20(L7%20+%20WAF)-blue?style=for-the-badge"/> | Web Traffic Routing & Security |
-| <img src="https://img.shields.io/badge/10-Monitoring%20Tools-blue?style=for-the-badge"/> | Azure Monitor, Log Analytics, App Insights |
-| <img src="https://img.shields.io/badge/11-App%20Services-blue?style=for-the-badge"/> | PaaS Web Hosting |
-| <img src="https://img.shields.io/badge/12-Function%20Apps-blue?style=for-the-badge"/> | Serverless Compute |
-| <img src="https://img.shields.io/badge/13-Service%20Bus-blue?style=for-the-badge"/> | Messaging (Queues, Topics) |
-| <img src="https://img.shields.io/badge/14-Event%20Hubs-blue?style=for-the-badge"/> | Big Data Streaming, Kafka-Compatible |
-| <img src="https://img.shields.io/badge/15-API%20Management-blue?style=for-the-badge"/> | API Gateway, Policies, Rate Limiting |
-| <img src="https://img.shields.io/badge/16-Azure%20SQL%20Database-blue?style=for-the-badge"/> | Managed Relational DB |
-| <img src="https://img.shields.io/badge/17-Databricks-blue?style=for-the-badge"/> | Big Data, AI/ML, Advanced Analytics |
-| <img src="https://img.shields.io/badge/18-Azure%20DevOps-blue?style=for-the-badge"/> | Repos, Boards, Artifacts |
-| <img src="https://img.shields.io/badge/19-DevOps%20Pipelines-blue?style=for-the-badge"/> | CI/CD Automation |
-| <img src="https://img.shields.io/badge/20-AKS-blue?style=for-the-badge"/> | Container Orchestration |
-| <img src="https://img.shields.io/badge/21-AVD-blue?style=for-the-badge"/> | Virtual Desktop Infrastructure |
-| <img src="https://img.shields.io/badge/22-Prometheus%20+%20Grafana-blue?style=for-the-badge"/> | Deep Infra & App Monitoring |
+### 🌍 Module 1 – Subscriptions & Resource Groups
+![Module1](https://img.shields.io/badge/Module-1-blue?style=for-the-badge)  
+**Focus:** Scopes, Governance, Billing  
+
+---
+
+### 🔑 Module 2 – Entra ID (Azure AD)
+![Module2](https://img.shields.io/badge/Module-2-blue?style=for-the-badge)  
+**Focus:** Identity Management, Users, Roles, RBAC  
+
+---
+
+### 🌐 Module 3 – Networking (VNets, Subnets, NSGs, Peering)
+![Module3](https://img.shields.io/badge/Module-3-blue?style=for-the-badge)  
+**Focus:** Core Azure Architecture, Connectivity  
+
+---
+
+### 💻 Module 4 – Virtual Machines (VMs)
+![Module4](https://img.shields.io/badge/Module-4-blue?style=for-the-badge)  
+**Focus:** Compute, Scaling, Snapshots, Backups  
+
+---
+
+### 📸 Module 5 – Azure Snapshots
+![Module5](https://img.shields.io/badge/Module-5-blue?style=for-the-badge)  
+**Focus:** VM State Capture & Restore  
+
+---
+
+### 🗄 Module 6 – Storage Accounts
+![Module6](https://img.shields.io/badge/Module-6-blue?style=for-the-badge)  
+**Focus:** Blob, File, Queue, Table, Redundancy  
+
+---
+
+### 🛡 Module 7 – Key Vault
+![Module7](https://img.shields.io/badge/Module-7-blue?style=for-the-badge)  
+**Focus:** Secrets, Keys, Certificates Management  
+
+---
+
+### ⚖️ Module 8 – Load Balancers (L4)
+![Module8](https://img.shields.io/badge/Module-8-blue?style=for-the-badge)  
+**Focus:** Internal & External Traffic Distribution  
+
+---
+
+### 🌐 Module 9 – Application Gateway (L7 + WAF)
+![Module9](https://img.shields.io/badge/Module-9-blue?style=for-the-badge)  
+**Focus:** Web Traffic Routing & Security  
+
+---
+
+### 📊 Module 10 – Monitoring Tools
+![Module10](https://img.shields.io/badge/Module-10-blue?style=for-the-badge)  
+**Focus:** Azure Monitor, Log Analytics, Application Insights  
+
+---
+
+### 🌐 Module 11 – App Services
+![Module11](https://img.shields.io/badge/Module-11-blue?style=for-the-badge)  
+**Focus:** Fully Managed PaaS Web Hosting  
+
+---
+
+### ⚡ Module 12 – Function Apps
+![Module12](https://img.shields.io/badge/Module-12-blue?style=for-the-badge)  
+**Focus:** Serverless Compute  
+
+---
+
+### 📩 Module 13 – Service Bus
+![Module13](https://img.shields.io/badge/Module-13-blue?style=for-the-badge)  
+**Focus:** Enterprise Messaging (Queues, Topics)  
+
+---
+
+### 📡 Module 14 – Event Hubs
+![Module14](https://img.shields.io/badge/Module-14-blue?style=for-the-badge)  
+**Focus:** Big Data Streaming, Kafka-Compatible  
+
+---
+
+### 🔗 Module 15 – API Management (APIM)
+![Module15](https://img.shields.io/badge/Module-15-blue?style=for-the-badge)  
+**Focus:** API Gateway, Policies, Rate Limiting  
+
+---
+
+### 🗄 Module 16 – Azure SQL Database
+![Module16](https://img.shields.io/badge/Module-16-blue?style=for-the-badge)  
+**Focus:** Managed Relational Database  
+
+---
+
+### 🔥 Module 17 – Azure Databricks
+![Module17](https://img.shields.io/badge/Module-17-blue?style=for-the-badge)  
+**Focus:** Big Data, AI/ML, Advanced Analytics  
+
+---
+
+### 🔧 Module 18 – Azure DevOps
+![Module18](https://img.shields.io/badge/Module-18-blue?style=for-the-badge)  
+**Focus:** Repos, Boards, Artifacts  
+
+---
+
+### 🚀 Module 19 – DevOps Pipelines
+![Module19](https://img.shields.io/badge/Module-19-blue?style=for-the-badge)  
+**Focus:** CI/CD Automation  
+
+---
+
+### 🐳 Module 20 – Azure Kubernetes Service (AKS)
+![Module20](https://img.shields.io/badge/Module-20-blue?style=for-the-badge)  
+**Focus:** Container Orchestration  
+
+---
+
+### 💻 Module 21 – Azure Virtual Desktop (AVD)
+![Module21](https://img.shields.io/badge/Module-21-blue?style=for-the-badge)  
+**Focus:** Virtual Desktop Infrastructure  
+
+---
+
+### 📈 Module 22 – Managed Prometheus + Grafana
+![Module22](https://img.shields.io/badge/Module-22-blue?style=for-the-badge)  
+**Focus:** Deep Monitoring for Infrastructure & Applications  
 
 </div>
 
