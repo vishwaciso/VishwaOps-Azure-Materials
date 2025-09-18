@@ -221,3 +221,40 @@ FinOps: Use cost allocation tags/labels consistently; central Cost/Chargeback re
 | **Typical Shared Tooling**  | Jenkins / CodePipeline / Prometheus in Tooling Account                                             | Azure DevOps / GitHub Enterprise / Monitoring in Tooling Subscription                                  | Cloud Build / Artifact Registry / Stackdriver in Tooling Project                           |
 | **Compliance Alignment**    | HIPAA, PCI, SOC2, FedRAMP via SCP + Config + Audit Account                                         | HIPAA, ISO27001, FedRAMP via Policy, Sentinel, Azure Monitor                                           | HIPAA, GDPR, ISO via Org Policies, Security Command Center, VPC-SC                         |
 
+
+
+---
+
+## 📊 Multi-Cloud Comparison Table
+
+| Feature / Aspect          | ![AWS](https://img.shields.io/badge/-AWS-orange?logo=amazon-aws&logoColor=white) | ![Azure](https://img.shields.io/badge/-Azure-blue?logo=microsoft-azure&logoColor=white) | ![GCP](https://img.shields.io/badge/-GCP-yellow?logo=google-cloud&logoColor=white) |
+|----------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **Root Entity**           | Master AWS Org Account                                                          | Azure AD Tenant + Root MG                                                               | GCP Org (Workspace/Identity domain)                                               |
+| **Hierarchy**             | Root → OU → Accounts                                                            | Root MG → MG → Subscriptions                                                            | Org → Folder → Projects                                                           |
+| **Workload Unit**         | **Account** (hard isolation)                                                    | **Subscription** (billing + isolation)                                                  | **Project** (IAM + billing)                                                       |
+| **Grouping**              | OUs                                                                             | Management Groups                                                                       | Folders                                                                           |
+| **Shared Services**       | Logging, Security, Networking, Tooling Accounts                                  | Logging, Security, Tooling Subscriptions                                                | Logging, Security, Tooling Projects                                               |
+| **Centralized Logging**   | CloudTrail → Logging Account                                                     | Log Analytics → Central Subscription                                                    | Logging sinks → Logging Project → BigQuery/Storage                                |
+| **Security Centralization** | Security Account (GuardDuty, Security Hub, IAM Analyzer)                       | Security Sub (Sentinel, Defender, Key Vaults)                                           | Security Project (SCC, Forseti, IAM policies)                                     |
+| **Networking Hub**        | Networking Account (Transit Gateway, VPCs)                                      | Networking Sub (Hub VNet, ExpressRoute)                                                 | Networking Project (Shared VPC, Interconnect)                                     |
+| **Policy Enforcement**    | SCPs (Service Control Policies)                                                  | Azure Policy + RBAC                                                                     | Org Policies + IAM                                                                |
+| **IAM**                   | IAM Users/Roles + Federation                                                    | Azure AD + RBAC                                                                         | Cloud IAM (roles at Org/Folder/Project levels)                                    |
+| **Landing Zone**          | AWS Control Tower                                                                | Azure CAF / Blueprints                                                                  | GCP Foundation Toolkit                                                            |
+| **Isolation Strength**    | 🔒 Strongest (accounts = walled gardens)                                         | 🟦 Medium (subs isolated, shared identity)                                              | ☀️ Softer (projects under same org)                                               |
+| **Billing**               | Consolidated billing via master org                                              | Per subscription, roll-up at tenant                                                     | Billing accounts → projects linked → BigQuery export                              |
+| **Compliance Alignment**  | HIPAA, PCI, FedRAMP via SCP + Config + Audit                                     | HIPAA, ISO, FedRAMP via Azure Policy + Sentinel                                         | HIPAA, GDPR, ISO via Org Policies + SCC                                           |
+
+---
+
+## ✅ Key Takeaways
+
+- **AWS** → Best for **hard isolation** (accounts as walled gardens).  
+- **Azure** → Best for **identity integration** with Microsoft ecosystem.  
+- **GCP** → Best for **flexible projects** and **data-heavy workloads**.  
+
+---
+
+<p align="center">
+  Built with ❤️ for Multi-Cloud Architects 🌍
+</p>
+
