@@ -1,6 +1,6 @@
 # 👥 Azure – Creating Multiple Users & Role Differences
 
-This guide explains how to create multiple users in **Azure Active Directory (Entra ID)** and the difference between **Directory Roles** and **RBAC Roles**.
+This guide explains how to create multiple users in **Azure Active Directory (Entra ID)**, assign them to subscriptions/resource groups, and the difference between **Directory Roles** and **RBAC Roles**.
 
 ---
 
@@ -43,18 +43,32 @@ Here’s the difference:
 
 ---
 
-## 🚀 Real-World Use Case
-- **Directory Role:**  
-  A company’s **IT Admin** manages all employee logins, password resets, MFA, and app registrations → needs **User Administrator (Directory Role)**.  
+## 🗂️ Step 4: Assign User to Subscription & Resource Groups
+After creating a user, they **must be assigned** to a subscription or resource group to access workloads.
 
-- **RBAC Role:**  
-  The **DevOps Team** deploys VMs, AKS clusters, and storage accounts in **Dev Resource Group** → needs **Contributor (RBAC Role)**.  
+1. In the Azure Portal → Go to **Subscriptions**.  
+2. Select your **subscription** (e.g., `Pay-As-You-Go` or `Production-Subscription`).  
+3. In the left menu → Click **Access control (IAM)**.  
+4. Click **+ Add → Add role assignment**.  
+5. Choose the **RBAC role** (e.g., `Reader`, `Contributor`, `Owner`).  
+6. Under **Members** → Select the **user** (e.g., Mukesh Kumar).  
+7. Click **Review + Assign**.  
+
+👉 Repeat the same steps at the **Resource Group (RG)** level if you want to scope access only to specific workloads.  
 
 ---
 
-## 📌 Best Practice
-- Use **least privilege** → give minimum role required.  
-- Combine **Directory Roles + RBAC Roles** when a user needs both identity & resource access.  
-- For multiple users → use **Groups** and assign roles at group level (easier management).  
+## 🚀 Real-World Example
+- **IT Admin (Directory Role)** → User Administrator in Entra ID → can create/manage users but has **no resource access**.  
+- **DevOps Engineer (RBAC Role)** → Contributor at `Dev-ResourceGroup` → can deploy VMs, AKS, and storage but cannot manage Azure AD users.  
+- **Finance Team** → Reader role at subscription level → can view cost and billing info but cannot change resources.  
+
+---
+
+## 📌 Best Practices
+- Always use **least privilege** → assign the minimum role needed.  
+- Use **Groups** (e.g., Developers, Finance, Security) → assign RBAC roles to groups instead of individual users for easier management.  
+- Separate **Prod, Dev, Test** using **different Resource Groups or Subscriptions**.  
+- Combine **Directory Roles + RBAC Roles** where needed.  
 
 ---
