@@ -1,36 +1,60 @@
-# Azure — Create Multiple Users (Step-by-step)
+# 👥 Azure – Creating Multiple Users & Role Differences
 
-This README explains how to create multiple users in **Microsoft Entra ID (Azure AD)** after signing in to your Azure account.  
-It includes three methods:
-- **Portal (Bulk create CSV)** — easiest for admins who prefer GUI  
-- **PowerShell (Microsoft Graph)** — recommended for robust automation & licensing  
-- **Azure CLI** — simple scripting from shell
-
-> **Prerequisites**
-> - You must be signed in as at least a **User Administrator** (or Global Admin) in the tenant. :contentReference[oaicite:0]{index=0}  
-> - Tools (choose what you need):
->   - Azure Portal (Microsoft Entra admin center) — no install needed. :contentReference[oaicite:1]{index=1}  
->   - Azure CLI (`az`) — install from Microsoft docs. :contentReference[oaicite:2]{index=2}  
->   - Microsoft Graph PowerShell (`Microsoft.Graph`) — install via PowerShell gallery. :contentReference[oaicite:3]{index=3}
+This guide explains how to create multiple users in **Azure Active Directory (Entra ID)** and the difference between **Directory Roles** and **RBAC Roles**.
 
 ---
 
-## Option A — Portal: Bulk create (CSV) — Quick GUI method
+## 🔑 Step 1: Login to Azure Portal
+1. Go to [Azure Portal](https://portal.azure.com/).  
+2. Sign in with your **Azure admin account** (usually Global Admin or User Admin role).  
+3. In the search bar, type **"Azure Active Directory"** (now called **Entra ID**) and open it.
 
-1. Sign in to the Microsoft Entra admin center: `https://entra.microsoft.com` (or Azure portal → Entra ID / Users). :contentReference[oaicite:4]{index=4}  
-2. Go to **Entra ID (Azure AD)** → **Users** → **Bulk create**.  
-3. Click **Download** to get the official CSV template. **Do not remove the first two rows** (version & headers) — the portal requires them. :contentReference[oaicite:5]{index=5}  
-4. Edit the downloaded CSV:
-   - Required fields (minimum): **Name (displayName)**, **User principal name (userPrincipalName)**, **Initial password**, **Block sign in (Yes/No)**.  
-   - Fill one row per user (replace example row).
-5. Upload the CSV back in **Bulk create** and submit. Portal will validate your file; fix errors if shown and re-submit. After completion, check **Bulk operation results** for details. :contentReference[oaicite:6]{index=6}
+---
 
-### Example (CSV tips)
-- Use the template from Microsoft (keeps first two rows intact).  
-- Example content (note: real template uses more exact header formatting — always download the template first):
+## 👥 Step 2: Create Multiple Users
+1. Inside **Azure Active Directory (Entra ID)** → Select **Users**.  
+2. Click **+ New user** → **Create new user**.  
+3. Fill in the details:
+   - **User name** → e.g., `mukesh@yourdomain.onmicrosoft.com`  
+   - **Name** → Mukesh Kumar  
+   - **Password** → Auto-generate (user changes at first login)  
+   - **Groups** (optional) → Assign to a team (e.g., Developers, HR, Finance)  
+   - **Directory role** → Assign role (e.g., Global Reader, Security Admin)  
+4. Click **Review + Create** → User is added.  
+5. Repeat the same process to add more users.  
 
-```csv
-# (downloaded template contains a version row and header row)
-Name [displayName] Required,User principal name [userPrincipalName] Required,Initial password [passwordProfile] Required,Block sign in [accountEnabled] Required
-"John Doe","john.doe@contoso.onmicrosoft.com","P@ssw0rd!","No"
-"Jane Smith","jane.smith@contoso.onmicrosoft.com","P@ssw0rd!","No"
+✅ For **bulk creation**, you can upload a **CSV file** in the **Users → Bulk create** option.  
+
+---
+
+## 🎭 Step 3: Assign Roles (Directory vs RBAC)
+When creating a user, you will see **Directory roles** (Azure AD roles).  
+For resources, you will use **RBAC roles** (Azure Resource Manager roles).
+
+Here’s the difference:
+
+| Feature | **Directory Roles (Azure AD / Entra ID)** | **RBAC Roles (Azure Resources)** |
+|---------|-------------------------------------------|-----------------------------------|
+| **Scope** | Applies at **tenant / directory level** (identity & access to Azure AD itself) | Applies at **resource level** (subscription, RG, VM, storage, etc.) |
+| **Purpose** | Manage **users, groups, apps, directory settings** | Manage **Azure resources** like VMs, Storage, Databases, Networks |
+| **Examples** | Global Admin, User Admin, Security Reader, Application Admin | Owner, Contributor, Reader, Storage Blob Data Contributor |
+| **Where Assigned?** | In **Azure AD (Entra ID)** under user roles | In **Azure Resource Manager (ARM)** at subscription, RG, or resource level |
+| **Real-Time Example** | - HR manager needs to create & manage employee accounts → Assign **User Admin** (Directory Role) <br> - Security team monitors sign-ins → Assign **Security Reader** | - DevOps engineer needs to deploy resources in Dev RG → Assign **Contributor** (RBAC) <br> - Finance team should only view billing data → Assign **Reader** (RBAC) |
+
+---
+
+## 🚀 Real-World Use Case
+- **Directory Role:**  
+  A company’s **IT Admin** manages all employee logins, password resets, MFA, and app registrations → needs **User Administrator (Directory Role)**.  
+
+- **RBAC Role:**  
+  The **DevOps Team** deploys VMs, AKS clusters, and storage accounts in **Dev Resource Group** → needs **Contributor (RBAC Role)**.  
+
+---
+
+## 📌 Best Practice
+- Use **least privilege** → give minimum role required.  
+- Combine **Directory Roles + RBAC Roles** when a user needs both identity & resource access.  
+- For multiple users → use **Groups** and assign roles at group level (easier management).  
+
+---
