@@ -29,6 +29,7 @@ az --version
 # Login
 az login
 
+#Get-Module -ListAvailable Az*
 
 
 3. Azure PowerShell
@@ -42,6 +43,25 @@ Install & Login:
 
 # Install module
 Install-Module -Name Az -AllowClobber -Force
+
+##for admin user
+#Install-Module -Name Az -Repository PSGallery -Force -AllowClobber
+#Import-Module Az
+#Connect-AzAccount
+ 
+or for normal user
+Install-Module -Name Az -Repository PSGallery -Force -AllowClobber -Scope CurrentUser
+Import-Module Az
+Connect-AzAccount
+
+
+
+or limited modules
+Install-Module Az.Accounts -Scope CurrentUser -Force
+Install-Module Az.Resources -Scope CurrentUser -Force
+Import-Module Az.Accounts
+Get-Module -ListAvailable Az*
+
 
 # Login
 Connect-AzAccount
