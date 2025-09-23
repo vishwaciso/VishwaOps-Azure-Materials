@@ -1,5 +1,8 @@
 # Azure CLI & PowerShell Commands Cheat Sheet
 
+Download azure powershell from this link
+https://learn.microsoft.com/en-gb/powershell/azure/install-azure-powershell?view=azps-14.4.0
+
 This guide provides commonly used **Azure CLI** and **Azure PowerShell** commands for corporate training.  
 👉 In **Azure Cloud Shell**:  
 - **Bash** → Only Azure CLI works  
@@ -88,3 +91,4 @@ This guide provides commonly used **Azure CLI** and **Azure PowerShell** command
 - Both tools manage the **same resources** — choose based on preference.  
 
 ---
+
