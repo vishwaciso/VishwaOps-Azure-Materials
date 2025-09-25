@@ -107,3 +107,38 @@ This guide now includes multiple scenarios for corporate employees. Each section
 ---
 
 ✅ Now the guide covers **Scenario 1: RBAC**, **Scenario 2: Management Groups**, and **Scenario 3: Tagging & Cost Analysis** in GUI mode.
+
+
+                          ┌────────────────────────────┐
+                          │    Tenant Root Group        │
+                          └──────────────┬─────────────┘
+                                         │
+                          ┌──────────────┴─────────────┐
+                          │        Org-MG              │
+                          │ (Management Group)          │
+                          └───────┬─────────┬──────────┘
+                                  │         │
+              ┌───────────────────┘         └───────────────────┐
+              │                                     │           │
+   ┌───────────────────┐                ┌───────────────────┐   │
+   │   Dev Subscription│                │   Test Subscription│   │
+   └───────────────────┘                └───────────────────┘   │
+                                                                 │
+                                                        ┌───────────────────┐
+                                                        │  Prod Subscription│
+                                                        └─────────┬─────────┘
+                                                                  │
+                                                ┌─────────────────┴────────────────┐
+                                                │                                  │
+                                     ┌──────────────────────┐        ┌─────────────────────┐
+                                     │  Payroll-RG          │        │  Prod-RG            │
+                                     │ Contributor: HR User │        │ Reader: HR User     │
+                                     └──────────┬───────────┘        └──────────┬──────────┘
+                                                │                               │
+                                        ┌─────────────┐                ┌─────────────────┐
+                                        │ payroll-vm  │                │ prod-sql-server │
+                                        │ (VM tags:   │                │ prod-db         │
+                                        │ Dept=Finance│                │ (Tagged Env=Prod│
+                                        │ Env=Prod)   │                │ Dept=Finance)   │
+                                        └─────────────┘                └─────────────────┘
+
