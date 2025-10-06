@@ -163,3 +163,10 @@ From VM terminal (Linux):
 
 ```bash
 curl https://ifconfig.co
+
+
+| Challenge                         | Expected Failure    | Fix                  |
+| --------------------------------- | ------------------- | -------------------- |
+| Remove route table                | VMs bypass firewall | Re-associate RT      |
+| Disable "Allow forwarded traffic" | VM-to-VM breaks     | Re-enable in peering |
+| Change next-hop wrong             | No internet         | Correct firewall IP  |
